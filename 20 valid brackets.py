@@ -7,13 +7,16 @@ Created on Thu Feb 20 18:21:10 2020
 
 class Solution(object):
     def isValid(self, s):
-        if s == None:
-            return
-        dic = {'{': '}',  '[': ']', '(': ')', '?': '?'}
-        stack = ['?']
+        stack = []
+        dict = {')':'(',']':'[','}':'{'}
         for c in s:
-            if c in dic:
+            if c not in dict:
                 stack.append(c)
-            elif dic[stack.pop()] != c:
-                return False 
-        return len(stack) == 1
+            elif not stack or dict[c] != stack.pop():
+                return False
+        return not stack
+    
+
+if __name__ == '__main__':
+    s = Solution()
+    print(s.isValid("({()})"))

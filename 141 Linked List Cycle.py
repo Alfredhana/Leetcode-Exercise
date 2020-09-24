@@ -11,13 +11,21 @@ class ListNode:
         self.next = None
 
 class Solution:
-    def hasCycle(self, head: ListNode) -> bool:
+    def hasCycle(self, head: ListNode):
         s = set()
         while head:
             if head in s:
                 return True
             s.add(head)
             head = head.next
+        return False
+    def hasCycleFastSlow(self, head: ListNode):
+        fast = slow = head
+        while slow and fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow is fast:
+                return True
         return False
 
 if __name__ == '__main__':

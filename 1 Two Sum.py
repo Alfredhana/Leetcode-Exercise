@@ -26,8 +26,9 @@ def TwoSum_HashTable_TwoPass(nums, target):
 def TwoSum_HashTable_OnePass(nums, target):
     table = {}
     for i, num in enumerate(nums):
-        if target - num in table:
-            return [table[target-nums[i]], i]
+        sub = target - num
+        if sub in table:
+            return [table[sub], i]
         table[num] = i
     return []
     

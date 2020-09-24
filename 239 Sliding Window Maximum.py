@@ -5,16 +5,17 @@ Created on Sat Feb 22 18:07:26 2020
 @author: USER
 """
 
-class Solution(object):
+class maxSlidingWindow(object):
     def maxSlidingWindow(self, nums, k):
-        deque = collections.deque()
-        res = []
-        for i, num in enumerate(nums):
-            while deque and deque[0] <= i - k:
-                deque.popleft() # outdate indices
-            while deque and num > nums[deque[-1]]:
-            eque.pop()
-            deque.append(i)
+        if not nums:
+            return []
+        window, res = [], []
+        for i, x in enumerate(nums):
+            if i>= k and window[0] <= i - k:
+                window.pop(0)
+            while window and nums[window[-1]] <= x:
+                window.pop()
+            window.append(i)
             if i >= k - 1:
-                res.append(nums[deque[0]])
+                res.append(nums[window[0]])
         return res
