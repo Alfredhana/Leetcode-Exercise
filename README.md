@@ -8,19 +8,19 @@ Improved quick Sort (Three Road Sort)
 
 # Array
 
-242 Is Anagram
+[https://github.com/Alfredhana/Leetcode-Exercise/blob/master/242%20Is%20Anagram.py](#242 Is Anagram)
 
 # Linked List
 
-1 Two Sum
+[https://github.com/Alfredhana/Leetcode-Exercise/blob/master/1%20Two%20Sum.py](#1 Two Sum)
 
-141 Linked List Cycle
+[](#141 Linked List Cycle)
 
-206 Reverse Linked List
+[](#206 Reverse Linked List)
 
-876 Middle of the Linked list
+[](#876 Middle of the Linked list)
 
-Offer 22 Find last k items in Linked List
+[](#Offer 22 Find last k items in Linked List)
 
 # Tree
 
@@ -28,9 +28,9 @@ Offer 22 Find last k items in Linked List
 
 # Dynamic Programming
 
-322 Coin Exchange
+[](#322 Coin Exchange)
 
-509 Fibonacci Numbers
+[](#509 Fibonacci Numbers)
 
 # DFS (Backtracking)
 

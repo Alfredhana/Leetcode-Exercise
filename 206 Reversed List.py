@@ -11,7 +11,7 @@ class ListNode(object):
         self.next = None
 
 class Solution(object):
-    def reverseList(self, head):
+    def reverseListIteration(self, head):
         pre = None
 		cur = head
 		while cur:
@@ -19,4 +19,9 @@ class Solution(object):
 			cur.next = pre
 			pre = cur
 			cur = tmp
-		return pre	
+		return pre
+    def reverseListRecursion(self, head):
+        cur, pre = head, None
+        while cur:
+            cur.next, pre, cur = pre, cur, cur.next
+        return pre
