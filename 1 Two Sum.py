@@ -46,5 +46,28 @@ def TwoSum(nums, target):
             right -= 1
     return [-1, -1]
 
+def TwoSumTarget(nums, target):
+    nums.sort()
+    res = []
+    left = 0
+    right = len(nums) - 1
+    while left < right:
+        s = nums[left] + nums[right]
+        l = nums[left]
+        r = nums[right]
+        if s == target:
+            res.append([left + 1, right + 1])
+            while left < right and nums[left] == l:
+                left += 1
+            while left < right and nums[right] == r:
+                right -= 1
+        elif s < target:
+            while left < right and nums[left] == l:
+                left += 1
+        elif s > target:
+            while left < right and nums[right] == r:
+                right -= 1
+    return res
+
 if __name__ == '__main__':
-    print(TwoSum_HashTable_OnePass([2,7,11,15], 9))
+    print(TwoSumTarget([1,1,1,2,2,3,3], 4))

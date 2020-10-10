@@ -14,7 +14,7 @@ Improved quick Sort (Three Road Sort)
 
 [https://github.com/Alfredhana/Leetcode-Exercise/blob/master/1%20Two%20Sum.py](#1 Two Sum)
 
-[](#141 Linked List Cycle)
+[https://github.com/Alfredhana/Leetcode-Exercise/blob/master/141%20Linked%20List%20Cycle.py](#141 Linked List Cycle)
 
 [](#206 Reverse Linked List)
 
